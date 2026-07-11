@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#10141f">
+  <title>a tiny thing for Marwa ✨</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fredoka:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <video autoplay muted loop playsinline id="bgVideo">
+    <source src="./assets/video.mp4" type="video/mp4">
+  </video>
+  <div class="shade"></div>
+  <div id="particles" aria-hidden="true"></div>
+
+  <main>
+    <section id="intro" class="panel visible">
+      <div class="tiny">a very serious website</div>
+      <h1>Marwa, click this.<br><span>don't ask questions 😭</span></h1>
+      <button id="startButton">okay fine ✨</button>
+      <p class="hint">sound on btw</p>
+    </section>
+
+    <section id="moments" class="panel">
+      <div id="lyricsContainer" class="lyrics-container"></div>
+    </section>
+
+    <section id="finalCard" class="panel">
+      <div class="card">
+        <div class="tiny">okay so...</div>
+        <h2>this website has absolutely<br>no practical purpose 😭</h2>
+        <p>I just felt like making something cute.</p>
+        <p>and unfortunately, you happened to be the person I made it for.</p>
+        <p>I don't know if anyone tells you this enough but...</p>
+        <p class="big">you're actually pretty awesome, Marwa.</p>
+        <p>your random stories, your opinions, and the way you somehow make normal conversations interesting — it's nice.</p>
+        <p>okay that's enough appreciation for today.</p>
+        <p><strong>don't let it get to your head 💀</strong></p>
+        <button id="lastButton">hehe okay 😭</button>
+      </div>
+    </section>
+
+    <section id="ending" class="panel">
+      <h2>still awesome tho ✨</h2>
+      <p>now go before this gets embarrassing 😭</p>
+    </section>
+  </main>
+
+  <audio id="audio" src="./assets/local.mp3" preload="auto"></audio>
+  <script src="./js/script.js"></script>
+</body>
+</html>
