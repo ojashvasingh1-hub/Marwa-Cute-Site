@@ -2,15 +2,13 @@
 // Keep these as ORIGINAL on-screen notes rather than full song lyrics.
 const moments = [
   { time: 2.0, text: "okay wait..." },
-  { time: 5.5, text: "this song just has ✨ vibes ✨" },
+  { time: 5.5, text: "this song got  ✨ vibes ✨" },
   { time: 10.0, text: "so naturally..." },
   { time: 13.0, text: "I made a completely unnecessary website 😭" },
-  { time: 18.0, text: "very productive use of my time btw" },
-  { time: 23.0, text: "but hey—" },
-  { time: 26.0, text: "some people deserve random cute things." },
-  { time: 32.0, text: "yes, apparently you made the list 💀" },
-  { time: 39.0, text: "anyway..." },
-  { time: 42.0, text: "one tiny message →" }
+  { time: 15.0, text: "very productive use of my time btw" },
+  { time: 19.0, text: "but hey 🙈" },
+  { time: 34.0, text: "anyway..." },
+  { time: 40.0, text: "one tiny message →" }
 ];
 
 const audio = document.getElementById("audio");
