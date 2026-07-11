@@ -1,0 +1,22 @@
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#10141f;color:#fff;font-family:"DM Sans",sans-serif}button{font:inherit}
+#bgVideo{position:fixed;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.shade{position:fixed;inset:0;z-index:1;background:linear-gradient(135deg,rgba(10,15,28,.72),rgba(18,31,48,.48),rgba(53,27,18,.55));backdrop-filter:blur(1px)}
+main,#particles{position:fixed;inset:0}main{z-index:3}#particles{z-index:2;overflow:hidden;pointer-events:none}
+.panel{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:28px;text-align:center;opacity:0;visibility:hidden;transform:scale(.985);transition:opacity .8s ease,transform .8s ease,visibility .8s}
+.panel.visible{opacity:1;visibility:visible;transform:scale(1)}
+.tiny{text-transform:uppercase;letter-spacing:.2em;font-size:.72rem;font-weight:700;opacity:.66;margin-bottom:18px}
+#intro h1{font-family:"Fredoka",sans-serif;font-size:clamp(2.2rem,8vw,5.6rem);line-height:1.02;margin:0;max-width:900px;text-shadow:0 8px 30px rgba(0,0,0,.35)}
+#intro h1 span{font-size:.58em;font-weight:500;opacity:.88}
+button{border:1px solid rgba(255,255,255,.34);background:rgba(255,255,255,.14);color:#fff;padding:14px 24px;border-radius:999px;backdrop-filter:blur(14px);cursor:pointer;transition:.25s ease;font-weight:700}
+button:hover{transform:translateY(-2px);background:rgba(255,255,255,.22)}
+#startButton{margin-top:34px;font-size:1.05rem}.hint{font-size:.75rem;opacity:.52;margin-top:12px}
+.lyrics-container{font-family:"Fredoka",sans-serif;font-size:clamp(2rem,7vw,5rem);font-weight:600;line-height:1.08;max-width:900px;opacity:0;transform:translateY(18px);transition:opacity .55s ease,transform .55s ease;text-shadow:0 8px 35px rgba(0,0,0,.45)}
+.lyrics-container.show{opacity:1;transform:translateY(0)}
+#finalCard{overflow-y:auto;justify-content:flex-start;padding-top:max(45px,7vh);padding-bottom:45px}
+.card{width:min(620px,100%);padding:clamp(26px,6vw,48px);border:1px solid rgba(255,255,255,.25);background:rgba(12,18,30,.48);backdrop-filter:blur(22px);border-radius:30px;box-shadow:0 24px 80px rgba(0,0,0,.28)}
+.card h2{font-family:"Fredoka",sans-serif;font-size:clamp(1.65rem,5vw,2.6rem);line-height:1.08;margin:0 0 28px}.card p{font-size:clamp(.98rem,3.5vw,1.12rem);line-height:1.65;opacity:.88;margin:14px 0}.card .big{font-family:"Fredoka",sans-serif;font-size:clamp(1.45rem,5vw,2.1rem);opacity:1;margin:28px 0}#lastButton{margin-top:24px}
+#ending h2{font-family:"Fredoka",sans-serif;font-size:clamp(2.5rem,10vw,6rem);margin:0;text-shadow:0 10px 40px rgba(0,0,0,.4)}#ending p{opacity:.7}
+.particle{position:absolute;bottom:-30px;animation:floatUp linear forwards;opacity:.8}.ember{color:#ffad66;text-shadow:0 0 12px #ff7b32;font-size:18px}.drop{color:#86d9ff;text-shadow:0 0 12px #3dbbff;font-size:10px}.burst{animation-duration:3s!important;font-size:24px}
+@keyframes floatUp{0%{transform:translate(0,0) scale(.5);opacity:0}12%{opacity:.9}100%{transform:translate(var(--drift),-115vh) scale(1.15) rotate(220deg);opacity:0}}
+@media(max-width:600px){.panel{padding:22px}.card{border-radius:24px}.shade{background:linear-gradient(150deg,rgba(10,15,28,.76),rgba(17,34,52,.52),rgba(58,30,20,.58))}}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
